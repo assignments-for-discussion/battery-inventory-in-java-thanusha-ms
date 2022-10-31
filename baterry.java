@@ -18,25 +18,15 @@ mediumCount++;
 else
 highCount++;
 
-    assert(counts.lowCount++);
-    assert(counts.mediumCount++);
-    assert(counts.highCount++);
+    (counts.lowCount++);
+    (counts.mediumCount++);
+    (counts.highCount++);
     return counts;
   }
 
   static void testBucketingByNumberOfCycles() {
     System.out.println("Counting batteries by usage cycles...\n");
-    CountsByUsage counts = countBatteriesByUsage(new int[] {100, 300, 500, 600, 900, 1000});
-for(int i=0;i<cycles.length();i++){
-if (cycles[i]<410)
-low count++;
-else 
-(cycle[i]>410<=949)
-medium count++;
-else
-high count++;
-
-
+    CountsByUsage counts = countBatteriesByUsage(new int[] {100, 300, 500, 600, 900, 1000})
     assert(counts.lowCount == 2);
     assert(counts.mediumCount == 3);
     assert(counts.highCount == 1);
